@@ -26,4 +26,16 @@ jobs:
           sleep 5
       - name: Test app endpoint
         run: |
-          curl -f http://localhost:5000 | grep 'Hello, World!' 
+          curl -f http://localhost:5000 | grep 'Hello, World!'
+  deploy:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Simulate deployment
+        run: |
+          echo "Deploying application..."
+          # Here you would add real deployment steps, e.g.,
+          # scp, rsync, or use a cloud provider's CLI
+          echo "Deployment complete." 

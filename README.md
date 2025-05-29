@@ -29,6 +29,16 @@
 2. Commit and push your code to your GitHub repository: https://github.com/stef-writes/basicCICD.git
 3. The CI pipeline will be set up in the next step.
 
+## Part 3: Continuous Delivery (CD)
+
+### Deliverables
+- **Updated .github/workflows/main.yml**: Now includes a Deploy stage after tests pass.
+- **Explanation**: The Deploy stage is currently a placeholder that simulates deployment. In a real scenario, this is where you would add commands to copy files to a server, trigger a Docker deployment, or use a cloud provider's CLI.
+- **Screenshot**: (To be added) showing the Deploy stage running successfully in GitHub Actions.
+
+### How deployment is automated
+After the build and test stages pass, the Deploy stage runs automatically. This is where you would automate the deployment of your application to your infrastructure (e.g., using Docker, SSH, or a cloud provider). For demonstration, the workflow currently just echoes deployment steps.
+
 ---
 
 Further deliverables and instructions for CI/CD will be added as we progress. 
