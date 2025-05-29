@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+build/
+dist/
+*.egg-info/
+nginx_output.html
+nginx_screenshot.png 
